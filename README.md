@@ -5,7 +5,9 @@ X3 Mod to introduce ship 30+ hotkeys for individual ship command management
 To use VoiceAttack with X3 and command individual ships and that needs alot of hotkeys.
 
 ## How do I use it?
+X3 Albion Prelude game with LxXRM 2.0 mod installed.
 You install mod using Cycrow's X-Universe Plugin Manager (https://forum.egosoft.com/viewtopic.php?t=265915)
+To work, this mod requires 'Hotkey Manager' by Cycrow installed.
 
 ## What does it do?
 It presents you with following shortcuts:
