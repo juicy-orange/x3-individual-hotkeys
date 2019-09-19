@@ -1,0 +1,1533 @@
+<?xml version="1.0" standalone="yes"?>
+<?xml-stylesheet href="x2script.xsl" type="text/xsl"?>
+<!-- Generated using X-Studio -->
+<script>
+	<name>setup.juicyorange.individual.hotkeys</name>
+	<version>1</version>
+	<engineversion>50</engineversion>
+	<description></description>
+	<arguments />
+	<sourcetext>
+		<line linenr="001" indent="">
+			<comment>* ************************************************</comment>
+		</line>
+		<line linenr="002" indent="">
+			<comment>* SCRIPT NAME: setup.juicyorange.individual.hotkeys.xml</comment>
+		</line>
+		<line linenr="003" indent="">
+			<comment>* DESCRIPTION: </comment>
+		</line>
+		<line linenr="004" indent="">
+			<comment>* </comment>
+		</line>
+		<line linenr="005" indent="">
+			<comment>* AUTHOR:  juicy-orange@GitHub         DATE: 25 August 2019</comment>
+		</line>
+		<line linenr="006" indent="">
+			<comment>* ************************************************</comment>
+		</line>
+		<line linenr="007" indent="">
+			<var>$debug</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>[FALSE]</var>
+		</line>
+		<line linenr="008" indent="">
+			<text>set</text>
+			<text> </text>
+			<text>global</text>
+			<text> </text>
+			<text>variable</text>
+			<text>:</text>
+			<text> </text>
+			<text>name</text>
+			<text>=</text>
+			<text>'plugin.individual.debug.level'</text>
+			<text> </text>
+			<text>value</text>
+			<text>=</text>
+			<var>$debug</var>
+		</line>
+		<line linenr="009" indent="" />
+		<line linenr="010" indent="">
+			<comment>* version can be used to recognize this plugin is running</comment>
+		</line>
+		<line linenr="011" indent="">
+			<text>set</text>
+			<text> </text>
+			<text>global</text>
+			<text> </text>
+			<text>variable</text>
+			<text>:</text>
+			<text> </text>
+			<text>name</text>
+			<text>=</text>
+			<text>'plugin.individual.hotkeys.version'</text>
+			<text> </text>
+			<text>value</text>
+			<text>=</text>
+			<text>'1.0'</text>
+		</line>
+		<line linenr="012" indent="" />
+		<line linenr="013" indent="" interruptable="@">
+			<text>=</text>
+			<text> </text>
+			<var>[THIS]</var>
+			<text>-&gt;</text>
+			<text> </text>
+			<text>call</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<call>plugin.hotkeymanager.add</call>
+			<text> </text>
+			<text>:</text>
+			<text> </text>
+			<text>a.name</text>
+			<text>=</text>
+			<text>'juicy-orange.individual.hotkeys.actions'</text>
+			<text> </text>
+			<text>a.text</text>
+			<text>=</text>
+			<text>'Ship: All Actions'</text>
+			<text> </text>
+			<text>a.script</text>
+			<text>=</text>
+			<text>'plugin.individual.hotkeys.select.action'</text>
+		</line>
+		<line linenr="014" indent="" interruptable="@">
+			<text>=</text>
+			<text> </text>
+			<var>[THIS]</var>
+			<text>-&gt;</text>
+			<text> </text>
+			<text>call</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<call>plugin.hotkeymanager.add</call>
+			<text> </text>
+			<text>:</text>
+			<text> </text>
+			<text>a.name</text>
+			<text>=</text>
+			<text>'juicy-orange.individual.hotkeys.select'</text>
+			<text> </text>
+			<text>a.text</text>
+			<text>=</text>
+			<text>'Ship: Select Role Ship'</text>
+			<text> </text>
+			<text>a.script</text>
+			<text>=</text>
+			<text>'plugin.individual.hotkeys.select'</text>
+		</line>
+		<line linenr="015" indent="" interruptable="@">
+			<text>=</text>
+			<text> </text>
+			<var>[THIS]</var>
+			<text>-&gt;</text>
+			<text> </text>
+			<text>call</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<call>plugin.hotkeymanager.add</call>
+			<text> </text>
+			<text>:</text>
+			<text> </text>
+			<text>a.name</text>
+			<text>=</text>
+			<text>'juicy-orange.individual.hotkeys.designate'</text>
+			<text> </text>
+			<text>a.text</text>
+			<text>=</text>
+			<text>'Ship: Designate Role Ship'</text>
+			<text> </text>
+			<text>a.script</text>
+			<text>=</text>
+			<text>'plugin.individual.hotkeys.designate'</text>
+		</line>
+		<line linenr="016" indent="" interruptable="@">
+			<text>=</text>
+			<text> </text>
+			<var>[THIS]</var>
+			<text>-&gt;</text>
+			<text> </text>
+			<text>call</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<call>plugin.hotkeymanager.add</call>
+			<text> </text>
+			<text>:</text>
+			<text> </text>
+			<text>a.name</text>
+			<text>=</text>
+			<text>'juicy-orange.individual.hotkeys.custom.locations'</text>
+			<text> </text>
+			<text>a.text</text>
+			<text>=</text>
+			<text>'Ship: Designate Custom Locations'</text>
+			<text> </text>
+			<text>a.script</text>
+			<text>=</text>
+			<text>'plugin.individual.hotkeys.designate.custom.location'</text>
+		</line>
+		<line linenr="017" indent="" interruptable="@">
+			<text>=</text>
+			<text> </text>
+			<var>[THIS]</var>
+			<text>-&gt;</text>
+			<text> </text>
+			<text>call</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<call>plugin.hotkeymanager.add</call>
+			<text> </text>
+			<text>:</text>
+			<text> </text>
+			<text>a.name</text>
+			<text>=</text>
+			<text>'juicy-orange.individual.hotkeys.to.safety'</text>
+			<text> </text>
+			<text>a.text</text>
+			<text>=</text>
+			<text>'Ship: Run To Safety'</text>
+			<text> </text>
+			<text>a.script</text>
+			<text>=</text>
+			<text>'plugin.individual.hotkeys.to.safety'</text>
+		</line>
+		<line linenr="018" indent="" interruptable="@">
+			<text>=</text>
+			<text> </text>
+			<var>[THIS]</var>
+			<text>-&gt;</text>
+			<text> </text>
+			<text>call</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<call>plugin.hotkeymanager.add</call>
+			<text> </text>
+			<text>:</text>
+			<text> </text>
+			<text>a.name</text>
+			<text>=</text>
+			<text>'juicy-orange.individual.hotkeys.attack.target'</text>
+			<text> </text>
+			<text>a.text</text>
+			<text>=</text>
+			<text>'Ship: Attack My Target'</text>
+			<text> </text>
+			<text>a.script</text>
+			<text>=</text>
+			<text>'plugin.individual.hotkeys.attack.target'</text>
+		</line>
+		<line linenr="019" indent="" interruptable="@">
+			<text>=</text>
+			<text> </text>
+			<var>[THIS]</var>
+			<text>-&gt;</text>
+			<text> </text>
+			<text>call</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<call>plugin.hotkeymanager.add</call>
+			<text> </text>
+			<text>:</text>
+			<text> </text>
+			<text>a.name</text>
+			<text>=</text>
+			<text>'juicy-orange.individual.hotkeys.to.shipyard'</text>
+			<text> </text>
+			<text>a.text</text>
+			<text>=</text>
+			<text>'Ship: To Nearest Shipyard'</text>
+			<text> </text>
+			<text>a.script</text>
+			<text>=</text>
+			<text>'plugin.individual.hotkeys.to.shipyard'</text>
+		</line>
+		<line linenr="020" indent="" interruptable="@">
+			<text>=</text>
+			<text> </text>
+			<var>[THIS]</var>
+			<text>-&gt;</text>
+			<text> </text>
+			<text>call</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<call>plugin.hotkeymanager.add</call>
+			<text> </text>
+			<text>:</text>
+			<text> </text>
+			<text>a.name</text>
+			<text>=</text>
+			<text>'juicy-orange.individual.hotkeys.to.tradestation'</text>
+			<text> </text>
+			<text>a.text</text>
+			<text>=</text>
+			<text>'Ship: To Nearest Trade Station'</text>
+			<text> </text>
+			<text>a.script</text>
+			<text>=</text>
+			<text>'plugin.individual.hotkeys.to.tradestation'</text>
+		</line>
+		<line linenr="021" indent="" interruptable="@">
+			<text>=</text>
+			<text> </text>
+			<var>[THIS]</var>
+			<text>-&gt;</text>
+			<text> </text>
+			<text>call</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<call>plugin.hotkeymanager.add</call>
+			<text> </text>
+			<text>:</text>
+			<text> </text>
+			<text>a.name</text>
+			<text>=</text>
+			<text>'juicy-orange.individual.hotkeys.to.equipmentdock'</text>
+			<text> </text>
+			<text>a.text</text>
+			<text>=</text>
+			<text>'Ship: To Nearest Equipment Dock'</text>
+			<text> </text>
+			<text>a.script</text>
+			<text>=</text>
+			<text>'plugin.individual.hotkeys.to.equipmentdock'</text>
+		</line>
+		<line linenr="022" indent="" interruptable="@">
+			<text>=</text>
+			<text> </text>
+			<var>[THIS]</var>
+			<text>-&gt;</text>
+			<text> </text>
+			<text>call</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<call>plugin.hotkeymanager.add</call>
+			<text> </text>
+			<text>:</text>
+			<text> </text>
+			<text>a.name</text>
+			<text>=</text>
+			<text>'juicy-orange.individual.hotkeys.to.hq'</text>
+			<text> </text>
+			<text>a.text</text>
+			<text>=</text>
+			<text>'Ship: To HQ'</text>
+			<text> </text>
+			<text>a.script</text>
+			<text>=</text>
+			<text>'plugin.individual.hotkeys.to.hq'</text>
+		</line>
+		<line linenr="023" indent="" interruptable="@">
+			<text>=</text>
+			<text> </text>
+			<var>[THIS]</var>
+			<text>-&gt;</text>
+			<text> </text>
+			<text>call</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<call>plugin.hotkeymanager.add</call>
+			<text> </text>
+			<text>:</text>
+			<text> </text>
+			<text>a.name</text>
+			<text>=</text>
+			<text>'juicy-orange.individual.hotkeys.to.custom.location'</text>
+			<text> </text>
+			<text>a.text</text>
+			<text>=</text>
+			<text>'Ship: To Custom Location'</text>
+			<text> </text>
+			<text>a.script</text>
+			<text>=</text>
+			<text>'plugin.individual.hotkeys.to.custom.location'</text>
+		</line>
+		<line linenr="024" indent="" interruptable="@">
+			<text>=</text>
+			<text> </text>
+			<var>[THIS]</var>
+			<text>-&gt;</text>
+			<text> </text>
+			<text>call</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<call>plugin.hotkeymanager.add</call>
+			<text> </text>
+			<text>:</text>
+			<text> </text>
+			<text>a.name</text>
+			<text>=</text>
+			<text>'juicy-orange.individual.hotkeys.to.location.one'</text>
+			<text> </text>
+			<text>a.text</text>
+			<text>=</text>
+			<text>'Ship: To Location Alpha'</text>
+			<text> </text>
+			<text>a.script</text>
+			<text>=</text>
+			<text>'plugin.individual.hotkeys.to.location.one'</text>
+		</line>
+		<line linenr="025" indent="" interruptable="@">
+			<text>=</text>
+			<text> </text>
+			<var>[THIS]</var>
+			<text>-&gt;</text>
+			<text> </text>
+			<text>call</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<call>plugin.hotkeymanager.add</call>
+			<text> </text>
+			<text>:</text>
+			<text> </text>
+			<text>a.name</text>
+			<text>=</text>
+			<text>'juicy-orange.individual.hotkeys.to.location.two'</text>
+			<text> </text>
+			<text>a.text</text>
+			<text>=</text>
+			<text>'Ship: To Location Beta'</text>
+			<text> </text>
+			<text>a.script</text>
+			<text>=</text>
+			<text>'plugin.individual.hotkeys.to.location.two'</text>
+		</line>
+		<line linenr="026" indent="" interruptable="@">
+			<text>=</text>
+			<text> </text>
+			<var>[THIS]</var>
+			<text>-&gt;</text>
+			<text> </text>
+			<text>call</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<call>plugin.hotkeymanager.add</call>
+			<text> </text>
+			<text>:</text>
+			<text> </text>
+			<text>a.name</text>
+			<text>=</text>
+			<text>'juicy-orange.individual.hotkeys.to.location.three'</text>
+			<text> </text>
+			<text>a.text</text>
+			<text>=</text>
+			<text>'Ship: To Location Gamma'</text>
+			<text> </text>
+			<text>a.script</text>
+			<text>=</text>
+			<text>'plugin.individual.hotkeys.to.location.three'</text>
+		</line>
+		<line linenr="027" indent="" interruptable="@">
+			<text>=</text>
+			<text> </text>
+			<var>[THIS]</var>
+			<text>-&gt;</text>
+			<text> </text>
+			<text>call</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<call>plugin.hotkeymanager.add</call>
+			<text> </text>
+			<text>:</text>
+			<text> </text>
+			<text>a.name</text>
+			<text>=</text>
+			<text>'juicy-orange.individual.hotkeys.to.location.four'</text>
+			<text> </text>
+			<text>a.text</text>
+			<text>=</text>
+			<text>'Ship: To Location Delta'</text>
+			<text> </text>
+			<text>a.script</text>
+			<text>=</text>
+			<text>'plugin.individual.hotkeys.to.location.four'</text>
+		</line>
+		<line linenr="028" indent="" interruptable="@">
+			<text>=</text>
+			<text> </text>
+			<var>[THIS]</var>
+			<text>-&gt;</text>
+			<text> </text>
+			<text>call</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<call>plugin.hotkeymanager.add</call>
+			<text> </text>
+			<text>:</text>
+			<text> </text>
+			<text>a.name</text>
+			<text>=</text>
+			<text>'juicy-orange.individual.hotkeys.follow.me'</text>
+			<text> </text>
+			<text>a.text</text>
+			<text>=</text>
+			<text>'Ship: Follow Me'</text>
+			<text> </text>
+			<text>a.script</text>
+			<text>=</text>
+			<text>'plugin.individual.hotkeys.follow.me'</text>
+		</line>
+		<line linenr="029" indent="" interruptable="@">
+			<text>=</text>
+			<text> </text>
+			<var>[THIS]</var>
+			<text>-&gt;</text>
+			<text> </text>
+			<text>call</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<call>plugin.hotkeymanager.add</call>
+			<text> </text>
+			<text>:</text>
+			<text> </text>
+			<text>a.name</text>
+			<text>=</text>
+			<text>'juicy-orange.individual.hotkeys.protect.me'</text>
+			<text> </text>
+			<text>a.text</text>
+			<text>=</text>
+			<text>'Ship: Protect Me'</text>
+			<text> </text>
+			<text>a.script</text>
+			<text>=</text>
+			<text>'plugin.individual.hotkeys.protect.me'</text>
+		</line>
+		<line linenr="030" indent="" interruptable="@">
+			<text>=</text>
+			<text> </text>
+			<var>[THIS]</var>
+			<text>-&gt;</text>
+			<text> </text>
+			<text>call</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<call>plugin.hotkeymanager.add</call>
+			<text> </text>
+			<text>:</text>
+			<text> </text>
+			<text>a.name</text>
+			<text>=</text>
+			<text>'juicy-orange.individual.hotkeys.collect.allware'</text>
+			<text> </text>
+			<text>a.text</text>
+			<text>=</text>
+			<text>'Ship: Collect All Wares'</text>
+			<text> </text>
+			<text>a.script</text>
+			<text>=</text>
+			<text>'plugin.individual.hotkeys.collect.allware'</text>
+		</line>
+		<line linenr="031" indent="" interruptable="@">
+			<text>=</text>
+			<text> </text>
+			<var>[THIS]</var>
+			<text>-&gt;</text>
+			<text> </text>
+			<text>call</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<call>plugin.hotkeymanager.add</call>
+			<text> </text>
+			<text>:</text>
+			<text> </text>
+			<text>a.name</text>
+			<text>=</text>
+			<text>'juicy-orange.individual.hotkeys.dock.withme'</text>
+			<text> </text>
+			<text>a.text</text>
+			<text>=</text>
+			<text>'Ship: Dock With Me'</text>
+			<text> </text>
+			<text>a.script</text>
+			<text>=</text>
+			<text>'plugin.individual.hotkeys.dock.withme'</text>
+		</line>
+		<line linenr="032" indent="" interruptable="@">
+			<text>=</text>
+			<text> </text>
+			<var>[THIS]</var>
+			<text>-&gt;</text>
+			<text> </text>
+			<text>call</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<call>plugin.hotkeymanager.add</call>
+			<text> </text>
+			<text>:</text>
+			<text> </text>
+			<text>a.name</text>
+			<text>=</text>
+			<text>'juicy-orange.individual.hotkeys.dock.at.target'</text>
+			<text> </text>
+			<text>a.text</text>
+			<text>=</text>
+			<text>'Ship: Dock At Target'</text>
+			<text> </text>
+			<text>a.script</text>
+			<text>=</text>
+			<text>'plugin.individual.hotkeys.dock.at.target'</text>
+		</line>
+		<line linenr="033" indent="" interruptable="@">
+			<text>=</text>
+			<text> </text>
+			<var>[THIS]</var>
+			<text>-&gt;</text>
+			<text> </text>
+			<text>call</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<call>plugin.hotkeymanager.add</call>
+			<text> </text>
+			<text>:</text>
+			<text> </text>
+			<text>a.name</text>
+			<text>=</text>
+			<text>'juicy-orange.individual.hotkeys.select.mule'</text>
+			<text> </text>
+			<text>a.text</text>
+			<text>=</text>
+			<text>'Ship: Select Mule'</text>
+			<text> </text>
+			<text>a.script</text>
+			<text>=</text>
+			<text>'plugin.individual.hotkeys.select.mule'</text>
+		</line>
+		<line linenr="034" indent="" interruptable="@">
+			<text>=</text>
+			<text> </text>
+			<var>[THIS]</var>
+			<text>-&gt;</text>
+			<text> </text>
+			<text>call</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<call>plugin.hotkeymanager.add</call>
+			<text> </text>
+			<text>:</text>
+			<text> </text>
+			<text>a.name</text>
+			<text>=</text>
+			<text>'juicy-orange.individual.hotkeys.select.fighter'</text>
+			<text> </text>
+			<text>a.text</text>
+			<text>=</text>
+			<text>'Ship: Select Fighter'</text>
+			<text> </text>
+			<text>a.script</text>
+			<text>=</text>
+			<text>'plugin.individual.hotkeys.select.fighter'</text>
+		</line>
+		<line linenr="035" indent="" interruptable="@">
+			<text>=</text>
+			<text> </text>
+			<var>[THIS]</var>
+			<text>-&gt;</text>
+			<text> </text>
+			<text>call</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<call>plugin.hotkeymanager.add</call>
+			<text> </text>
+			<text>:</text>
+			<text> </text>
+			<text>a.name</text>
+			<text>=</text>
+			<text>'juicy-orange.individual.hotkeys.select.carrier'</text>
+			<text> </text>
+			<text>a.text</text>
+			<text>=</text>
+			<text>'Ship: Select Carrier'</text>
+			<text> </text>
+			<text>a.script</text>
+			<text>=</text>
+			<text>'plugin.individual.hotkeys.select.carrier'</text>
+		</line>
+		<line linenr="036" indent="" interruptable="@">
+			<text>=</text>
+			<text> </text>
+			<var>[THIS]</var>
+			<text>-&gt;</text>
+			<text> </text>
+			<text>call</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<call>plugin.hotkeymanager.add</call>
+			<text> </text>
+			<text>:</text>
+			<text> </text>
+			<text>a.name</text>
+			<text>=</text>
+			<text>'juicy-orange.individual.hotkeys.select.mobilehomebase'</text>
+			<text> </text>
+			<text>a.text</text>
+			<text>=</text>
+			<text>'Ship: Select Mobile Homebase'</text>
+			<text> </text>
+			<text>a.script</text>
+			<text>=</text>
+			<text>'plugin.individual.hotkeys.select.mobilehomebase'</text>
+		</line>
+		<line linenr="037" indent="" interruptable="@">
+			<text>=</text>
+			<text> </text>
+			<var>[THIS]</var>
+			<text>-&gt;</text>
+			<text> </text>
+			<text>call</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<call>plugin.hotkeymanager.add</call>
+			<text> </text>
+			<text>:</text>
+			<text> </text>
+			<text>a.name</text>
+			<text>=</text>
+			<text>'juicy-orange.individual.hotkeys.select.support.one'</text>
+			<text> </text>
+			<text>a.text</text>
+			<text>=</text>
+			<text>'Ship: Select Support Alpha'</text>
+			<text> </text>
+			<text>a.script</text>
+			<text>=</text>
+			<text>'plugin.individual.hotkeys.select.support.one'</text>
+		</line>
+		<line linenr="038" indent="" interruptable="@">
+			<text>=</text>
+			<text> </text>
+			<var>[THIS]</var>
+			<text>-&gt;</text>
+			<text> </text>
+			<text>call</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<call>plugin.hotkeymanager.add</call>
+			<text> </text>
+			<text>:</text>
+			<text> </text>
+			<text>a.name</text>
+			<text>=</text>
+			<text>'juicy-orange.individual.hotkeys.select.support.two'</text>
+			<text> </text>
+			<text>a.text</text>
+			<text>=</text>
+			<text>'Ship: Select Support Beta'</text>
+			<text> </text>
+			<text>a.script</text>
+			<text>=</text>
+			<text>'plugin.individual.hotkeys.select.support.two'</text>
+		</line>
+		<line linenr="039" indent="" interruptable="@">
+			<text>=</text>
+			<text> </text>
+			<var>[THIS]</var>
+			<text>-&gt;</text>
+			<text> </text>
+			<text>call</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<call>plugin.hotkeymanager.add</call>
+			<text> </text>
+			<text>:</text>
+			<text> </text>
+			<text>a.name</text>
+			<text>=</text>
+			<text>'juicy-orange.individual.hotkeys.select.support.three'</text>
+			<text> </text>
+			<text>a.text</text>
+			<text>=</text>
+			<text>'Ship: Select Support Gamma'</text>
+			<text> </text>
+			<text>a.script</text>
+			<text>=</text>
+			<text>'plugin.individual.hotkeys.select.support.three'</text>
+		</line>
+		<line linenr="040" indent="" interruptable="@">
+			<text>=</text>
+			<text> </text>
+			<var>[THIS]</var>
+			<text>-&gt;</text>
+			<text> </text>
+			<text>call</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<call>plugin.hotkeymanager.add</call>
+			<text> </text>
+			<text>:</text>
+			<text> </text>
+			<text>a.name</text>
+			<text>=</text>
+			<text>'juicy-orange.individual.hotkeys.select.support.four'</text>
+			<text> </text>
+			<text>a.text</text>
+			<text>=</text>
+			<text>'Ship: Select Support Delta'</text>
+			<text> </text>
+			<text>a.script</text>
+			<text>=</text>
+			<text>'plugin.individual.hotkeys.select.support.four'</text>
+		</line>
+		<line linenr="041" indent="" interruptable="@">
+			<text>=</text>
+			<text> </text>
+			<var>[THIS]</var>
+			<text>-&gt;</text>
+			<text> </text>
+			<text>call</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<call>plugin.hotkeymanager.add</call>
+			<text> </text>
+			<text>:</text>
+			<text> </text>
+			<text>a.name</text>
+			<text>=</text>
+			<text>'juicy-orange.individual.current.ship.location'</text>
+			<text> </text>
+			<text>a.text</text>
+			<text>=</text>
+			<text>'Ship: Show Ship Location'</text>
+			<text> </text>
+			<text>a.script</text>
+			<text>=</text>
+			<text>'plugin.individual.player.to.safety'</text>
+		</line>
+		<line linenr="042" indent="" interruptable="@">
+			<text>=</text>
+			<text> </text>
+			<var>[THIS]</var>
+			<text>-&gt;</text>
+			<text> </text>
+			<text>call</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<call>plugin.hotkeymanager.add</call>
+			<text> </text>
+			<text>:</text>
+			<text> </text>
+			<text>a.name</text>
+			<text>=</text>
+			<text>'juicy-orange.individual.target.to.selection'</text>
+			<text> </text>
+			<text>a.text</text>
+			<text>=</text>
+			<text>'Ship: Target Dock At'</text>
+			<text> </text>
+			<text>a.script</text>
+			<text>=</text>
+			<text>'plugin.individual.hotkeys.target.to.selection'</text>
+		</line>
+		<line linenr="043" indent="" interruptable="@">
+			<text>=</text>
+			<text> </text>
+			<var>[THIS]</var>
+			<text>-&gt;</text>
+			<text> </text>
+			<text>call</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<call>plugin.hotkeymanager.add</call>
+			<text> </text>
+			<text>:</text>
+			<text> </text>
+			<text>a.name</text>
+			<text>=</text>
+			<text>'juicy-orange.individual.target.to.stop'</text>
+			<text> </text>
+			<text>a.text</text>
+			<text>=</text>
+			<text>'Ship: Stop Current Command'</text>
+			<text> </text>
+			<text>a.script</text>
+			<text>=</text>
+			<text>'plugin.individual.hotkeys.to.stop'</text>
+		</line>
+		<line linenr="044" indent="" interruptable="@">
+			<text>=</text>
+			<text> </text>
+			<var>[THIS]</var>
+			<text>-&gt;</text>
+			<text> </text>
+			<text>call</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<call>plugin.hotkeymanager.add</call>
+			<text> </text>
+			<text>:</text>
+			<text> </text>
+			<text>a.name</text>
+			<text>=</text>
+			<text>'juicy-orange.individual.player.target.tradestation'</text>
+			<text> </text>
+			<text>a.text</text>
+			<text>=</text>
+			<text>'Ship: Player to Trade Station'</text>
+			<text> </text>
+			<text>a.script</text>
+			<text>=</text>
+			<text>'plugin.individual.player.target.tradestation'</text>
+		</line>
+		<line linenr="045" indent="" interruptable="@">
+			<text>=</text>
+			<text> </text>
+			<var>[THIS]</var>
+			<text>-&gt;</text>
+			<text> </text>
+			<text>call</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<call>plugin.hotkeymanager.add</call>
+			<text> </text>
+			<text>:</text>
+			<text> </text>
+			<text>a.name</text>
+			<text>=</text>
+			<text>'juicy-orange.individual.player.target.neareststation'</text>
+			<text> </text>
+			<text>a.text</text>
+			<text>=</text>
+			<text>'Ship: Player to Nearest Station'</text>
+			<text> </text>
+			<text>a.script</text>
+			<text>=</text>
+			<text>'plugin.individual.player.target.neareststation'</text>
+		</line>
+		<line linenr="046" indent="" interruptable="@">
+			<text>=</text>
+			<text> </text>
+			<var>[THIS]</var>
+			<text>-&gt;</text>
+			<text> </text>
+			<text>call</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<call>plugin.hotkeymanager.add</call>
+			<text> </text>
+			<text>:</text>
+			<text> </text>
+			<text>a.name</text>
+			<text>=</text>
+			<text>'juicy-orange.individual.player.to.safety'</text>
+			<text> </text>
+			<text>a.text</text>
+			<text>=</text>
+			<text>'Ship: Player To Safety'</text>
+			<text> </text>
+			<text>a.script</text>
+			<text>=</text>
+			<text>'plugin.individual.player.to.safety'</text>
+		</line>
+		<line linenr="047" indent="" />
+		<line linenr="048" indent="">
+			<text>return</text>
+			<text> </text>
+			<var>null</var>
+		</line>
+	</sourcetext>
+	<codearray>
+		<sval type="array" size="10">
+			<sval type="string" val="setup.juicyorange.individual.hotkeys" />
+			<sval type="int" val="50" />
+			<sval type="string" val="" />
+			<sval type="int" val="1" />
+			<sval type="int" val="0" />
+			<sval type="array" size="1">
+				<sval type="string" val="debug" />
+			</sval>
+			<sval type="array" size="38">
+				<sval type="array" size="7">
+					<sval type="int" val="104" />
+					<sval type="int" val="0" />
+					<sval type="int" val="1" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="9" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-1" />
+				</sval>
+				<sval type="array" size="5">
+					<sval type="int" val="157" />
+					<sval type="int" val="5" />
+					<sval type="string" val="plugin.individual.debug.level" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+				</sval>
+				<sval type="array" size="5">
+					<sval type="int" val="157" />
+					<sval type="int" val="5" />
+					<sval type="string" val="plugin.individual.hotkeys.version" />
+					<sval type="int" val="5" />
+					<sval type="string" val="1.0" />
+				</sval>
+				<sval type="array" size="12">
+					<sval type="int" val="102" />
+					<sval type="string" val="plugin.hotkeymanager.add" />
+					<sval type="int" val="-2147483647" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="1" />
+					<sval type="int" val="3" />
+					<sval type="int" val="5" />
+					<sval type="string" val="juicy-orange.individual.hotkeys.actions" />
+					<sval type="int" val="5" />
+					<sval type="string" val="Ship: All Actions" />
+					<sval type="int" val="5" />
+					<sval type="string" val="plugin.individual.hotkeys.select.action" />
+				</sval>
+				<sval type="array" size="12">
+					<sval type="int" val="102" />
+					<sval type="string" val="plugin.hotkeymanager.add" />
+					<sval type="int" val="-2147483647" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="1" />
+					<sval type="int" val="3" />
+					<sval type="int" val="5" />
+					<sval type="string" val="juicy-orange.individual.hotkeys.select" />
+					<sval type="int" val="5" />
+					<sval type="string" val="Ship: Select Role Ship" />
+					<sval type="int" val="5" />
+					<sval type="string" val="plugin.individual.hotkeys.select" />
+				</sval>
+				<sval type="array" size="12">
+					<sval type="int" val="102" />
+					<sval type="string" val="plugin.hotkeymanager.add" />
+					<sval type="int" val="-2147483647" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="1" />
+					<sval type="int" val="3" />
+					<sval type="int" val="5" />
+					<sval type="string" val="juicy-orange.individual.hotkeys.designate" />
+					<sval type="int" val="5" />
+					<sval type="string" val="Ship: Designate Role Ship" />
+					<sval type="int" val="5" />
+					<sval type="string" val="plugin.individual.hotkeys.designate" />
+				</sval>
+				<sval type="array" size="12">
+					<sval type="int" val="102" />
+					<sval type="string" val="plugin.hotkeymanager.add" />
+					<sval type="int" val="-2147483647" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="1" />
+					<sval type="int" val="3" />
+					<sval type="int" val="5" />
+					<sval type="string" val="juicy-orange.individual.hotkeys.custom.locations" />
+					<sval type="int" val="5" />
+					<sval type="string" val="Ship: Designate Custom Locations" />
+					<sval type="int" val="5" />
+					<sval type="string" val="plugin.individual.hotkeys.designate.custom.location" />
+				</sval>
+				<sval type="array" size="12">
+					<sval type="int" val="102" />
+					<sval type="string" val="plugin.hotkeymanager.add" />
+					<sval type="int" val="-2147483647" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="1" />
+					<sval type="int" val="3" />
+					<sval type="int" val="5" />
+					<sval type="string" val="juicy-orange.individual.hotkeys.to.safety" />
+					<sval type="int" val="5" />
+					<sval type="string" val="Ship: Run To Safety" />
+					<sval type="int" val="5" />
+					<sval type="string" val="plugin.individual.hotkeys.to.safety" />
+				</sval>
+				<sval type="array" size="12">
+					<sval type="int" val="102" />
+					<sval type="string" val="plugin.hotkeymanager.add" />
+					<sval type="int" val="-2147483647" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="1" />
+					<sval type="int" val="3" />
+					<sval type="int" val="5" />
+					<sval type="string" val="juicy-orange.individual.hotkeys.attack.target" />
+					<sval type="int" val="5" />
+					<sval type="string" val="Ship: Attack My Target" />
+					<sval type="int" val="5" />
+					<sval type="string" val="plugin.individual.hotkeys.attack.target" />
+				</sval>
+				<sval type="array" size="12">
+					<sval type="int" val="102" />
+					<sval type="string" val="plugin.hotkeymanager.add" />
+					<sval type="int" val="-2147483647" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="1" />
+					<sval type="int" val="3" />
+					<sval type="int" val="5" />
+					<sval type="string" val="juicy-orange.individual.hotkeys.to.shipyard" />
+					<sval type="int" val="5" />
+					<sval type="string" val="Ship: To Nearest Shipyard" />
+					<sval type="int" val="5" />
+					<sval type="string" val="plugin.individual.hotkeys.to.shipyard" />
+				</sval>
+				<sval type="array" size="12">
+					<sval type="int" val="102" />
+					<sval type="string" val="plugin.hotkeymanager.add" />
+					<sval type="int" val="-2147483647" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="1" />
+					<sval type="int" val="3" />
+					<sval type="int" val="5" />
+					<sval type="string" val="juicy-orange.individual.hotkeys.to.tradestation" />
+					<sval type="int" val="5" />
+					<sval type="string" val="Ship: To Nearest Trade Station" />
+					<sval type="int" val="5" />
+					<sval type="string" val="plugin.individual.hotkeys.to.tradestation" />
+				</sval>
+				<sval type="array" size="12">
+					<sval type="int" val="102" />
+					<sval type="string" val="plugin.hotkeymanager.add" />
+					<sval type="int" val="-2147483647" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="1" />
+					<sval type="int" val="3" />
+					<sval type="int" val="5" />
+					<sval type="string" val="juicy-orange.individual.hotkeys.to.equipmentdock" />
+					<sval type="int" val="5" />
+					<sval type="string" val="Ship: To Nearest Equipment Dock" />
+					<sval type="int" val="5" />
+					<sval type="string" val="plugin.individual.hotkeys.to.equipmentdock" />
+				</sval>
+				<sval type="array" size="12">
+					<sval type="int" val="102" />
+					<sval type="string" val="plugin.hotkeymanager.add" />
+					<sval type="int" val="-2147483647" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="1" />
+					<sval type="int" val="3" />
+					<sval type="int" val="5" />
+					<sval type="string" val="juicy-orange.individual.hotkeys.to.hq" />
+					<sval type="int" val="5" />
+					<sval type="string" val="Ship: To HQ" />
+					<sval type="int" val="5" />
+					<sval type="string" val="plugin.individual.hotkeys.to.hq" />
+				</sval>
+				<sval type="array" size="12">
+					<sval type="int" val="102" />
+					<sval type="string" val="plugin.hotkeymanager.add" />
+					<sval type="int" val="-2147483647" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="1" />
+					<sval type="int" val="3" />
+					<sval type="int" val="5" />
+					<sval type="string" val="juicy-orange.individual.hotkeys.to.custom.location" />
+					<sval type="int" val="5" />
+					<sval type="string" val="Ship: To Custom Location" />
+					<sval type="int" val="5" />
+					<sval type="string" val="plugin.individual.hotkeys.to.custom.location" />
+				</sval>
+				<sval type="array" size="12">
+					<sval type="int" val="102" />
+					<sval type="string" val="plugin.hotkeymanager.add" />
+					<sval type="int" val="-2147483647" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="1" />
+					<sval type="int" val="3" />
+					<sval type="int" val="5" />
+					<sval type="string" val="juicy-orange.individual.hotkeys.to.location.one" />
+					<sval type="int" val="5" />
+					<sval type="string" val="Ship: To Location Alpha" />
+					<sval type="int" val="5" />
+					<sval type="string" val="plugin.individual.hotkeys.to.location.one" />
+				</sval>
+				<sval type="array" size="12">
+					<sval type="int" val="102" />
+					<sval type="string" val="plugin.hotkeymanager.add" />
+					<sval type="int" val="-2147483647" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="1" />
+					<sval type="int" val="3" />
+					<sval type="int" val="5" />
+					<sval type="string" val="juicy-orange.individual.hotkeys.to.location.two" />
+					<sval type="int" val="5" />
+					<sval type="string" val="Ship: To Location Beta" />
+					<sval type="int" val="5" />
+					<sval type="string" val="plugin.individual.hotkeys.to.location.two" />
+				</sval>
+				<sval type="array" size="12">
+					<sval type="int" val="102" />
+					<sval type="string" val="plugin.hotkeymanager.add" />
+					<sval type="int" val="-2147483647" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="1" />
+					<sval type="int" val="3" />
+					<sval type="int" val="5" />
+					<sval type="string" val="juicy-orange.individual.hotkeys.to.location.three" />
+					<sval type="int" val="5" />
+					<sval type="string" val="Ship: To Location Gamma" />
+					<sval type="int" val="5" />
+					<sval type="string" val="plugin.individual.hotkeys.to.location.three" />
+				</sval>
+				<sval type="array" size="12">
+					<sval type="int" val="102" />
+					<sval type="string" val="plugin.hotkeymanager.add" />
+					<sval type="int" val="-2147483647" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="1" />
+					<sval type="int" val="3" />
+					<sval type="int" val="5" />
+					<sval type="string" val="juicy-orange.individual.hotkeys.to.location.four" />
+					<sval type="int" val="5" />
+					<sval type="string" val="Ship: To Location Delta" />
+					<sval type="int" val="5" />
+					<sval type="string" val="plugin.individual.hotkeys.to.location.four" />
+				</sval>
+				<sval type="array" size="12">
+					<sval type="int" val="102" />
+					<sval type="string" val="plugin.hotkeymanager.add" />
+					<sval type="int" val="-2147483647" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="1" />
+					<sval type="int" val="3" />
+					<sval type="int" val="5" />
+					<sval type="string" val="juicy-orange.individual.hotkeys.follow.me" />
+					<sval type="int" val="5" />
+					<sval type="string" val="Ship: Follow Me" />
+					<sval type="int" val="5" />
+					<sval type="string" val="plugin.individual.hotkeys.follow.me" />
+				</sval>
+				<sval type="array" size="12">
+					<sval type="int" val="102" />
+					<sval type="string" val="plugin.hotkeymanager.add" />
+					<sval type="int" val="-2147483647" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="1" />
+					<sval type="int" val="3" />
+					<sval type="int" val="5" />
+					<sval type="string" val="juicy-orange.individual.hotkeys.protect.me" />
+					<sval type="int" val="5" />
+					<sval type="string" val="Ship: Protect Me" />
+					<sval type="int" val="5" />
+					<sval type="string" val="plugin.individual.hotkeys.protect.me" />
+				</sval>
+				<sval type="array" size="12">
+					<sval type="int" val="102" />
+					<sval type="string" val="plugin.hotkeymanager.add" />
+					<sval type="int" val="-2147483647" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="1" />
+					<sval type="int" val="3" />
+					<sval type="int" val="5" />
+					<sval type="string" val="juicy-orange.individual.hotkeys.collect.allware" />
+					<sval type="int" val="5" />
+					<sval type="string" val="Ship: Collect All Wares" />
+					<sval type="int" val="5" />
+					<sval type="string" val="plugin.individual.hotkeys.collect.allware" />
+				</sval>
+				<sval type="array" size="12">
+					<sval type="int" val="102" />
+					<sval type="string" val="plugin.hotkeymanager.add" />
+					<sval type="int" val="-2147483647" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="1" />
+					<sval type="int" val="3" />
+					<sval type="int" val="5" />
+					<sval type="string" val="juicy-orange.individual.hotkeys.dock.withme" />
+					<sval type="int" val="5" />
+					<sval type="string" val="Ship: Dock With Me" />
+					<sval type="int" val="5" />
+					<sval type="string" val="plugin.individual.hotkeys.dock.withme" />
+				</sval>
+				<sval type="array" size="12">
+					<sval type="int" val="102" />
+					<sval type="string" val="plugin.hotkeymanager.add" />
+					<sval type="int" val="-2147483647" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="1" />
+					<sval type="int" val="3" />
+					<sval type="int" val="5" />
+					<sval type="string" val="juicy-orange.individual.hotkeys.dock.at.target" />
+					<sval type="int" val="5" />
+					<sval type="string" val="Ship: Dock At Target" />
+					<sval type="int" val="5" />
+					<sval type="string" val="plugin.individual.hotkeys.dock.at.target" />
+				</sval>
+				<sval type="array" size="12">
+					<sval type="int" val="102" />
+					<sval type="string" val="plugin.hotkeymanager.add" />
+					<sval type="int" val="-2147483647" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="1" />
+					<sval type="int" val="3" />
+					<sval type="int" val="5" />
+					<sval type="string" val="juicy-orange.individual.hotkeys.select.mule" />
+					<sval type="int" val="5" />
+					<sval type="string" val="Ship: Select Mule" />
+					<sval type="int" val="5" />
+					<sval type="string" val="plugin.individual.hotkeys.select.mule" />
+				</sval>
+				<sval type="array" size="12">
+					<sval type="int" val="102" />
+					<sval type="string" val="plugin.hotkeymanager.add" />
+					<sval type="int" val="-2147483647" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="1" />
+					<sval type="int" val="3" />
+					<sval type="int" val="5" />
+					<sval type="string" val="juicy-orange.individual.hotkeys.select.fighter" />
+					<sval type="int" val="5" />
+					<sval type="string" val="Ship: Select Fighter" />
+					<sval type="int" val="5" />
+					<sval type="string" val="plugin.individual.hotkeys.select.fighter" />
+				</sval>
+				<sval type="array" size="12">
+					<sval type="int" val="102" />
+					<sval type="string" val="plugin.hotkeymanager.add" />
+					<sval type="int" val="-2147483647" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="1" />
+					<sval type="int" val="3" />
+					<sval type="int" val="5" />
+					<sval type="string" val="juicy-orange.individual.hotkeys.select.carrier" />
+					<sval type="int" val="5" />
+					<sval type="string" val="Ship: Select Carrier" />
+					<sval type="int" val="5" />
+					<sval type="string" val="plugin.individual.hotkeys.select.carrier" />
+				</sval>
+				<sval type="array" size="12">
+					<sval type="int" val="102" />
+					<sval type="string" val="plugin.hotkeymanager.add" />
+					<sval type="int" val="-2147483647" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="1" />
+					<sval type="int" val="3" />
+					<sval type="int" val="5" />
+					<sval type="string" val="juicy-orange.individual.hotkeys.select.mobilehomebase" />
+					<sval type="int" val="5" />
+					<sval type="string" val="Ship: Select Mobile Homebase" />
+					<sval type="int" val="5" />
+					<sval type="string" val="plugin.individual.hotkeys.select.mobilehomebase" />
+				</sval>
+				<sval type="array" size="12">
+					<sval type="int" val="102" />
+					<sval type="string" val="plugin.hotkeymanager.add" />
+					<sval type="int" val="-2147483647" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="1" />
+					<sval type="int" val="3" />
+					<sval type="int" val="5" />
+					<sval type="string" val="juicy-orange.individual.hotkeys.select.support.one" />
+					<sval type="int" val="5" />
+					<sval type="string" val="Ship: Select Support Alpha" />
+					<sval type="int" val="5" />
+					<sval type="string" val="plugin.individual.hotkeys.select.support.one" />
+				</sval>
+				<sval type="array" size="12">
+					<sval type="int" val="102" />
+					<sval type="string" val="plugin.hotkeymanager.add" />
+					<sval type="int" val="-2147483647" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="1" />
+					<sval type="int" val="3" />
+					<sval type="int" val="5" />
+					<sval type="string" val="juicy-orange.individual.hotkeys.select.support.two" />
+					<sval type="int" val="5" />
+					<sval type="string" val="Ship: Select Support Beta" />
+					<sval type="int" val="5" />
+					<sval type="string" val="plugin.individual.hotkeys.select.support.two" />
+				</sval>
+				<sval type="array" size="12">
+					<sval type="int" val="102" />
+					<sval type="string" val="plugin.hotkeymanager.add" />
+					<sval type="int" val="-2147483647" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="1" />
+					<sval type="int" val="3" />
+					<sval type="int" val="5" />
+					<sval type="string" val="juicy-orange.individual.hotkeys.select.support.three" />
+					<sval type="int" val="5" />
+					<sval type="string" val="Ship: Select Support Gamma" />
+					<sval type="int" val="5" />
+					<sval type="string" val="plugin.individual.hotkeys.select.support.three" />
+				</sval>
+				<sval type="array" size="12">
+					<sval type="int" val="102" />
+					<sval type="string" val="plugin.hotkeymanager.add" />
+					<sval type="int" val="-2147483647" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="1" />
+					<sval type="int" val="3" />
+					<sval type="int" val="5" />
+					<sval type="string" val="juicy-orange.individual.hotkeys.select.support.four" />
+					<sval type="int" val="5" />
+					<sval type="string" val="Ship: Select Support Delta" />
+					<sval type="int" val="5" />
+					<sval type="string" val="plugin.individual.hotkeys.select.support.four" />
+				</sval>
+				<sval type="array" size="12">
+					<sval type="int" val="102" />
+					<sval type="string" val="plugin.hotkeymanager.add" />
+					<sval type="int" val="-2147483647" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="1" />
+					<sval type="int" val="3" />
+					<sval type="int" val="5" />
+					<sval type="string" val="juicy-orange.individual.current.ship.location" />
+					<sval type="int" val="5" />
+					<sval type="string" val="Ship: Show Ship Location" />
+					<sval type="int" val="5" />
+					<sval type="string" val="plugin.individual.player.to.safety" />
+				</sval>
+				<sval type="array" size="12">
+					<sval type="int" val="102" />
+					<sval type="string" val="plugin.hotkeymanager.add" />
+					<sval type="int" val="-2147483647" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="1" />
+					<sval type="int" val="3" />
+					<sval type="int" val="5" />
+					<sval type="string" val="juicy-orange.individual.target.to.selection" />
+					<sval type="int" val="5" />
+					<sval type="string" val="Ship: Target Dock At" />
+					<sval type="int" val="5" />
+					<sval type="string" val="plugin.individual.hotkeys.target.to.selection" />
+				</sval>
+				<sval type="array" size="12">
+					<sval type="int" val="102" />
+					<sval type="string" val="plugin.hotkeymanager.add" />
+					<sval type="int" val="-2147483647" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="1" />
+					<sval type="int" val="3" />
+					<sval type="int" val="5" />
+					<sval type="string" val="juicy-orange.individual.target.to.stop" />
+					<sval type="int" val="5" />
+					<sval type="string" val="Ship: Stop Current Command" />
+					<sval type="int" val="5" />
+					<sval type="string" val="plugin.individual.hotkeys.to.stop" />
+				</sval>
+				<sval type="array" size="12">
+					<sval type="int" val="102" />
+					<sval type="string" val="plugin.hotkeymanager.add" />
+					<sval type="int" val="-2147483647" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="1" />
+					<sval type="int" val="3" />
+					<sval type="int" val="5" />
+					<sval type="string" val="juicy-orange.individual.player.target.tradestation" />
+					<sval type="int" val="5" />
+					<sval type="string" val="Ship: Player to Trade Station" />
+					<sval type="int" val="5" />
+					<sval type="string" val="plugin.individual.player.target.tradestation" />
+				</sval>
+				<sval type="array" size="12">
+					<sval type="int" val="102" />
+					<sval type="string" val="plugin.hotkeymanager.add" />
+					<sval type="int" val="-2147483647" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="1" />
+					<sval type="int" val="3" />
+					<sval type="int" val="5" />
+					<sval type="string" val="juicy-orange.individual.player.target.neareststation" />
+					<sval type="int" val="5" />
+					<sval type="string" val="Ship: Player to Nearest Station" />
+					<sval type="int" val="5" />
+					<sval type="string" val="plugin.individual.player.target.neareststation" />
+				</sval>
+				<sval type="array" size="12">
+					<sval type="int" val="102" />
+					<sval type="string" val="plugin.hotkeymanager.add" />
+					<sval type="int" val="-2147483647" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="1" />
+					<sval type="int" val="3" />
+					<sval type="int" val="5" />
+					<sval type="string" val="juicy-orange.individual.player.to.safety" />
+					<sval type="int" val="5" />
+					<sval type="string" val="Ship: Player To Safety" />
+					<sval type="int" val="5" />
+					<sval type="string" val="plugin.individual.player.to.safety" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="103" />
+					<sval type="int" val="0" />
+					<sval type="int" val="0" />
+				</sval>
+			</sval>
+			<sval type="int" val="0" />
+			<sval type="array" size="10">
+				<sval type="array" size="3">
+					<sval type="int" val="0" />
+					<sval type="int" val="1" />
+					<sval type="string" val="************************************************" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="0" />
+					<sval type="int" val="1" />
+					<sval type="string" val="SCRIPT NAME: setup.juicyorange.individual.hotkeys.xml" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="0" />
+					<sval type="int" val="1" />
+					<sval type="string" val="DESCRIPTION: " />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="0" />
+					<sval type="int" val="1" />
+					<sval type="string" val="" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="0" />
+					<sval type="int" val="1" />
+					<sval type="string" val="AUTHOR:  juicy-orange@GitHub         DATE: 25 August 2019" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="0" />
+					<sval type="int" val="1" />
+					<sval type="string" val="************************************************" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="2" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="2" />
+					<sval type="int" val="1" />
+					<sval type="string" val="version can be used to recognize this plugin is running" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="3" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="37" />
+					<sval type="int" val="2" />
+				</sval>
+			</sval>
+			<sval type="int" val="0" />
+		</sval>
+	</codearray>
+</script>
